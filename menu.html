@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Sheet1</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- begin css  -->
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/javascript/tablesaw/tablesaw.css" />
+        <link rel="stylesheet" type="text/css" href="assets/javascript/tablesaw/icons/icons.css" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+        <!-- end css -->
+
+        <!-- begin scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <!-- end scripts -->
+    </head>
+
+    <body>
+        <noscript>
+            <div id="noscript_note">You must have JavaScript enabled to view this page.</div>
+        </noscript>
+
+        <div id="data"></div>
+        <script src="assets/javascript/modernizr.js"></script>
+
+        <script src="assets/javascript/pym.js"></script>
+        <script src="assets/javascript/tablesaw/tablesaw.js"></script>
+        <script src="assets/javascript/tabletop.js"></script>
+        <script src="assets/javascript/responsiveTable.js"></script>
+
+        <script type="text/javascript">
+
+        var spreadsheet_id = '1acJiyyol2E9CcmhCR2DrmSjie6Nlih9M9viGV2HlR5c';
+
+          (function() {
+            var reponsive_table = new ResponsiveTable(spreadsheet_id, [["beer","Beer"],["style","Style"],["brewery","Brewery"],["location","Location"],["abv","ABV %"],["description","Description"],['small','150ml'],['medium','250ml'],['large','500ml'],['srm','SRM']]);
+
+            var inIframe = function() {
+              try {
+                return window.self !== window.top;
+              } catch (e) {
+                return true;
+              }
+            };
+
+            $(function() {
+              if (inIframe())
+                $('body').css('overflow-x', 'hidden');
+            });
+          })();
+        </script>
+
+
+
+    </body>
+</html>
+
