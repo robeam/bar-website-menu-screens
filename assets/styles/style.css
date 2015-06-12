@@ -279,7 +279,7 @@ footer {
   background:rgba(0,0,0,0.2);
   padding:1em;
 }
-.map ../images {
+.map img {
   float:left;
   width:7em;
   margin:0 1em 0 0;
