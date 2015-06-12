@@ -54,6 +54,18 @@
 .tablesaw-stack tbody tr {
   border-bottom: 2px solid rgba(255,255,255,0.15);
 }
+.tablesaw {
+  font-family: "Monospac821 BT WGL4",monospace !important;
+}
+.tablesaw thead {
+  background:none;
+  border:0;
+  color:#fff;
+}
+.tablesaw thead th {
+  border:0 !important;
+  color:#fff !important;
+}
 
 @media screen and (max-width: 70em) {
   #data table {
@@ -350,14 +362,15 @@ form input[type="submit"] {
   background-image:url(../images/instagram.svg);
 }
 
-
 @media only screen and (max-width: 640px) {
 
   .meta.abv,
   .beerlist dl,
   .col_list,
-  footer .left {
-    display:none;
+  footer .left,
+  .tablesaw .description,
+  .tablesaw .srm {
+    display:none !important;
   }
 
   .block {
@@ -373,15 +386,13 @@ form input[type="submit"] {
     padding:1em;
     text-decoration:none;
   }
-  .mobile_map a ../images {
+  .mobile_map a img {
     float:left;
     width:5em;
     margin:0.2em 1em 0 0;
   }
 
 }
-
-
 
 @media only screen and (min-width: 640px) {
 
@@ -397,7 +408,6 @@ form input[type="submit"] {
   .mobile_map {
     display:none;
   }
-
 
   .block {
     width:46%;
@@ -428,7 +438,6 @@ form input[type="submit"] {
     -webkit-column-count:2;
        -moz-column-count:2;
         column-count:2;
-
   }
 
   .location {
