@@ -412,6 +412,19 @@ form input[type="submit"] {
     font-size:2em;
   }
 
+  .tablesaw td,
+  .tablesaw tbody th {
+    font-size:1em;
+    padding:0;
+  }
+  .tablesaw tr {
+    padding:2em 0;
+  }
+  .tablesaw-stack tbody td,
+  .tablesaw-stack tbody th {
+    width: 50%;
+  }
+
   .block {
     padding:2em 0;
   }

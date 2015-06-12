@@ -531,7 +531,7 @@ table.tablesaw thead td {
 .tablesaw td,
 .tablesaw tbody th {
   vertical-align: middle;
-  font-size: 1em;
+  font-size: 1.17em;
   /* 19px */
 }
 
@@ -669,7 +669,7 @@ table.tablesaw thead td {
   .tablesaw-stack tbody th {
     clear: left;
     float: left;
-    width: 50%;
+    width: 100%;
   }
 }
 
