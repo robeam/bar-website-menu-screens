@@ -28,12 +28,7 @@
 /*Table*/
 
 #data table {
-	font: 100%/1.2 sans-serif;
   font-size: 0.75em;
-}
-
-#data table tr:nth-child(even) {
-    background-color: #efefef;
 }
 
 #data table td.tool {
@@ -56,6 +51,9 @@
   width: 100%;
   margin: 0 0 6px 0;
 }
+.tablesaw-stack tbody tr {
+  border-bottom: 2px solid rgba(255,255,255,0.15);
+}
 
 @media screen and (max-width: 70em) {
   #data table {
@@ -70,4 +68,394 @@
   #data table {
     font: 100%/1.2 sans-serif;
   }
+}
+
+
+
+
+
+@import "reset.css";
+
+body {
+  font-family:"Monospac821 BT WGL4",monospace;
+  position:relative;
+  background:url(../images/body_bg.jpg) no-repeat center center fixed;
+  background-size:cover;
+  color:#fff;
+  font-size:16px;
+  line-height:140%;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.hidden {
+  display:none;
+}
+
+h1,h2,h3 {
+  font-family:"Vitesse Sans";
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+}
+h1 {
+  font-size:1.53em;
+}
+h3 {
+  font-size:1.53em;
+  text-align:center;
+  margin-bottom:1em;
+}
+h4 {
+  margin-bottom:1.2em;
+}
+p {
+  margin-bottom:1em;
+}
+
+a {
+  color:#fff;
+}
+
+header{
+   padding:2% 0 4% 0;
+   background:rgba(29,33,35,0.9);
+   /*position:fixed;
+   left:0;
+   top:0;*/
+   z-index:999;
+   width:100%;
+   border-bottom:5px solid rgba(0,0,0,0.2);
+   text-align:center;
+}
+header h1 a {
+  display:block;
+  width:3em;
+  text-indent:-999em;
+  background:url(../images/dots.svg) no-repeat center center;
+  background-size:2em;
+  height:2em;
+  margin:0 auto 0.3em auto;
+}
+
+.intro {
+  
+}
+.intro img {
+  display:none;
+}
+.intro div {
+  border-top:10px solid #F1FF10;
+  background:rgba(29,33,35,0.9);
+  color:#fff;
+  padding:1em;
+  margin:100px auto;
+  width:60%;
+}
+
+.content_pad {
+  padding:4% 8%;
+}
+
+
+#content_wrap {
+  background:rgba(29,33,35,0.9);
+  border-top:5px solid rgba(0,0,0,0.2);
+}
+
+.beerlist {
+  position:relative;
+}
+.beerlist > li {
+  border-bottom:2px solid rgba(255,255,255,0.1);
+  padding:1.5em 0;
+  position:relative;
+}
+.tap_number {
+  width:2em;
+  text-align:center;
+  position:absolute;
+  left:-6%;
+}
+.beerlist h4 {
+  max-width:60%;
+}
+.beerlist .meta {
+  position:absolute;
+  right:0;
+  top:1.5em;
+  width:30%;
+}
+.beerlist .description {
+  opacity:0.8;
+  line-height:1.2em;
+  font-size:0.9em;
+  width:60%;
+  float:left;
+}
+.beerlist dl {
+  width:30%;
+  float:right;
+  margin-right:2.6%;
+  text-align:center;
+}
+.beerlist dl li {
+  float:left;
+  width:33%;
+}
+.beerlist dl dt {
+  opacity:0.8;
+  font-size:0.9em;
+}
+
+.type span {
+  display:inline-block;
+  width:1.5em;
+  height:1.5em;
+  border-radius:0.8em;
+  text-indent:-999em;
+}
+.type.light span {
+  background-color:#FFCF36;
+}
+.type.pale span {
+  background-color:#E69100;
+}
+.type.brown span {
+  background-color:#963500;
+}
+.type.dark span {
+  background-color:#210506;
+}
+
+.img_break {
+  border-top:5px solid #F1FF10;
+  background:rgba(0,0,0,0.2);
+  overflow:hidden;
+  padding:1% 0;
+  margin:3em 0 2em 0;
+}
+.img_break img {
+  display:block;
+  float:left;
+  
+  margin-right:1.2%;
+  
+}
+.img_break img:nth-child(1) {
+  width:22.3%;
+}
+.img_break img:nth-child(2) {
+  width:33.5%;
+}
+.img_break img:nth-child(3) {
+  width:18.3%;
+  margin-right:0;
+}
+.img_break img:nth-child(4) {
+  float:right;
+  width:22.3%;
+  margin-right:0;
+}
+
+footer {
+  background:rgba(0,0,0,0.3);
+}
+
+.map {
+  display:block;
+  text-decoration:none;
+  background:rgba(0,0,0,0.2);
+  padding:1em;
+}
+.map ../images {
+  float:left;
+  width:7em;
+  margin:0 1em 0 0;
+}
+
+form {
+  margin-bottom:2em;
+}
+form label {
+  display:block;
+  margin-bottom:1em;
+}
+form div {
+  position:relative;
+}
+form input {
+  font-family:"Monospac821 BT WGL4",monospace;
+  font-size:1em;
+  padding:0.8em 10% 0.8em 2%;
+  border:0;
+  display:inline-block;
+}
+form input[type="email"] {
+  width:88%;
+}
+form input[type="submit"] {
+  background:#F1FF10;
+  border:0;
+  padding:0.8em 1.5em;
+  cursor:pointer;
+  position:absolute;
+  right:0;
+  top:0;
+  float:right;
+}
+
+.sociallinks {
+  overflow:hidden;
+  margin:3em 0;
+}
+.sociallinks li {
+  width:30%;
+  float:left;
+  margin-left:5%;
+}
+.sociallinks li:first-child {
+  margin:0;
+}
+.sociallinks li a {
+  display:block;
+  background:rgba(255,255,255,0.2) no-repeat center center;
+  background-size:2.6em;
+  text-indent:-9999em;
+  height:4em;
+}
+.sociallinks li a:hover,
+.sociallinks li a:focus,
+.sociallinks li a:active {
+  background-color:rgba(255,255,255,0.5);
+}
+.sociallinks li.twitter a {
+  background-image:url(../images/twitter.svg);
+}
+.sociallinks li.facebook a {
+  background-image:url(../images/facebook.svg);
+}
+.sociallinks li.instagram a {
+  background-image:url(../images/instagram.svg);
+}
+
+
+@media only screen and (max-width: 640px) {
+
+  .meta.abv,
+  .beerlist dl,
+  .col_list,
+  footer .left {
+    display:none;
+  }
+
+  .block {
+    padding:2em 0;
+  }
+
+  .mobile_map {
+    margin:3em 0 2em 0;
+  }
+  .mobile_map a {
+    display:block;
+    background:rgba(0,0,0,0.2);
+    padding:1em;
+    text-decoration:none;
+  }
+  .mobile_map a ../images {
+    float:left;
+    width:5em;
+    margin:0.2em 1em 0 0;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 640px) {
+
+  .intro {
+    
+    padding-top:25%;
+  }
+
+  .intro div {
+    
+  }
+
+  .mobile_map {
+    display:none;
+  }
+
+
+  .block {
+    width:46%;
+  }
+  .block.left {
+    float:left;
+  }
+  .block.right {
+    float:right;
+  }
+
+  .info {
+    display:inline-block;
+    position:absolute;
+    right:2.5%;
+    top:1.2em;
+    width:24px;
+    line-height:24px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.1);
+    text-align:center;
+    text-decoration:none;
+    font-size:0.8em;
+    color:rgba(255,255,255,0.5);
+  }
+
+  .col_list {
+    -webkit-column-count:2;
+       -moz-column-count:2;
+        column-count:2;
+
+  }
+
+  .location {
+    width:48%;
+    float:left;
+  }
+  
+
+  .contact {
+    width:48%;
+    float:right;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  body {
+    font-size:16px;
+  }
+
+/*  .abv {
+    opacity:1;
+    font-size:1em;
+    position:absolute;
+    top:1em;
+    left:46%;
+  }*/
+
 }

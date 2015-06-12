@@ -20,38 +20,181 @@
     </head>
 
     <body>
-        <header class="bg-image-header" id="window-height">
-        <h1>Brewbot Belafst - Coming Soon</h1>
+
+        <header>
+
+            <h1><a href="http://brewbot.io">Brewbot </a>Belfast</h1>
+
         </header>
 
-        <section class="bar-tap-list" id="data">
+        <div class="intro">
 
-        </section>
+            <div>
+                Brewbot Belfast is a craft beer bar, events space and education center. Opening begining of July 2015.
+            </div>
 
-        <section class="bar-in-progress clear-float">
-            <img src="http://placehold.it/50" class="image" />
-            <img src="http://placehold.it/50" class="image" />
-            <img src="http://placehold.it/50" class="image" />
-            <img src="http://placehold.it/50" class="image" />
-        </section>
+        </div>
 
-        <section class="bottles-food clear-float">
-            <article class="bottles float panel">
-                <H3>Bottle List</H3>
-            </article>
-            <article class="food float panel">
-                <H3>Food options</H3>
-            </article>
-        </section>
+        <div id="content_wrap">
 
-        <section class="address-social clear-float">
-            <article class="address float panel">
-                <H3>Address & Contacts</H3>
-            </article>
-            <article class="social float panel">
-                <H3>Social Media</H3>
-            </article>
-        </section>
+            <div class="mobile_map">
+
+                <a href="http://maps.apple.com/maps?q=451%20ormeau%20road%20belfast">
+                    <img src="assets/images/map.gif">
+                    <p>
+                        451 Ormeau Road<br>
+                        Belfast<br>
+                        BT7 3GQ
+                    </p>
+                </a>
+                <p class="content_pad">Thursday to Sunday, 5pm&mdash;1am</p>
+
+            </div>
+
+            <div class="content_pad">
+
+                <h3>Currently on tap</h3>
+
+                <div id="data"></div>
+
+                <ul class="beerlist" style="display:none;">
+
+                    <!-- LOOP THIS
+                    <li class="clearfix">
+                        <span class="tap_number">x</span>
+                        <h4>[brewery] • [beer name] • [Origin]</h4>
+                        <div class="meta">
+                            <span class="type pale">[type (light,pale,brown,dark)]</span>
+                            <p class="abv"><span class="hidden">ABV</span>[ABV]</p>
+                        </div>
+                        <p class="description">[description]</p>
+                        <dl>
+                            <li>
+                                <dt>150ml</dt>
+                                <dd>[150 price]</dd>
+                            </li>
+                            <li>
+                                <dt>250ml</dt>
+                                <dd>[250 price]</dd>
+                            </li>
+                            <li>
+                                <dt>500ml</dt>
+                                <dd>[500 price</dd>
+                            </li>
+                        </dl>
+                    </li>
+                    -->
+
+                </ul>
+
+            </div>
+
+            <div class="img_break">
+
+                <img src="assets/images/img_1.jpg">
+                <img src="assets/images/img_2.jpg">
+                <img src="assets/images/img_3.jpg">
+                <img src="assets/images/img_4.jpg">
+
+            </div>
+
+            <div class="content_pad clearfix">
+
+                <div class="block left">
+
+                    <h3>More beer</h3>
+
+                    <p>We also have over 300 bottles and cans from some of the world’s finest breweries.</p>
+
+                    <ul class="col_list col2">
+                        <li>Sierra Nevada</li>
+                        <li>Beavertown</li>
+                        <li>Deschute</li>
+                        <li>Ninkasi</li>
+                        <li>Russian River</li>
+                        <li>Firestone walker</li>
+                        <li>Hopeworks</li>
+                        <li>Stone</li>
+                        <li>Verdant</li>
+                        <li>Lagunitas</li>
+                        <li>Brewdog</li>
+                        <li>Founders</li>
+                        <li>Camden Town Brewery</li>
+                        <li>Meantime</li>
+                        <li>The Kernel</li>
+                    </ul>
+
+                </div>
+
+                <div class="block right">
+
+                    <h3>Chef in residence</h3>
+
+                    <h4><a href="">Jolly Pies</a></h4>
+                    <p>Here’s a brief description of what Jolly Pies make, and why it’s really good with beer.</p>
+                    <h5>Upcoming:</h5>
+                    <p>
+                        Cuban Sandwich Factory<br>
+                        Falfalafels
+                    </p>
+                    <p>Call to action to email us if you’re a street food guy <a href="">jonny@brewbot.io</a></p>
+
+                </div>
+
+            </div>
+
+            <footer class="content_pad clearfix">
+
+                <div class="block left">
+
+                    <p>
+                        <a href="" class="map">
+                            <img src="img/map.gif">
+                            Brewbot Belfast<br>
+                            451 Ormeau Road<br>
+                            Belfast<br>
+                            BT7 3GQ
+                        </a>
+                    </p>
+                    <p>
+                        Current opening hours<br>
+                        Thursday to Sunday, 5pm–1am
+                    </p>
+
+
+                </div>
+
+                <div class="block right">
+
+                    <form>
+                        <label for="mailinglist">Sign up for our mailing list:</label>
+                        <div>
+                            <input type="email" id="mailinglist" placeholder="Your email address">
+                            <input type="submit" value="Sign up">
+                        </div>
+                    </form>
+
+                    <ul class="sociallinks">
+                        <li class="twitter">
+                            <a href="http://twitter.com/brewbotbelfast/">Follow us on Twitter</a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/brewbotbelfast/">Like us on Facebook</a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://instagram.com/teambrewbot/">Follow us on Instagram</a>
+                        </li>
+                    </ul>
+
+                    <p>
+                        <a href="http://teambrewbot.github.io/brewbotbelfast/">Fork us on Github</a>
+                    </p>
+
+                </div>
+
+            </footer>
+
+        </div><!-- ending content_wrap -->
 
         <script src="assets/javascript/modernizr.js"></script>
         <!-- iFrame support -->
