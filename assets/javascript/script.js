@@ -17,7 +17,7 @@ $(document).ready(function() {
   var spreadsheet_id = '1acJiyyol2E9CcmhCR2DrmSjie6Nlih9M9viGV2HlR5c';
 
     (function() {
-      var reponsive_table = new ResponsiveTable(spreadsheet_id, [["beer","Beer"],["style","Style"],["brewery","Brewery"],["location","Location"],["abv","ABV %"],["description","Description"],['small','150ml'],['medium','250ml'],['large','500ml'],['srm','SRM']]);
+      var reponsive_table = new ResponsiveTable(spreadsheet_id, [["beer","Beer"],["style","Style"],['srm','SRM'],["brewery","Brewery"],["location","Location"],["abv","ABV %"],["description","Description"],['small','150ml'],['medium','250ml'],['large','500ml']]);
 
       var inIframe = function() {
         try {
