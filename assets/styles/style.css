@@ -24,6 +24,22 @@
   width: 25%;
 }
 
+.srm {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+}
+
+.pale {background-color: red}
+.ipa {background-color: green}
+.black {background-color: yellow}
+.sour {background-color: orange}
+.belgium {background-color: blue}
+
+.tablesaw-stack td.description {
+  display: none;
+}
 
 /*Table*/
 
@@ -162,7 +178,7 @@ header h1 a {
 }
 
 .intro {
-  
+
 }
 .intro img {
   display:none;
@@ -261,9 +277,9 @@ header h1 a {
 .img_break img {
   display:block;
   float:left;
-  
+
   margin-right:1.2%;
-  
+
 }
 .img_break img:nth-child(1) {
   width:22.3%;
@@ -397,12 +413,12 @@ form input[type="submit"] {
 @media only screen and (min-width: 640px) {
 
   .intro {
-    
+
     padding-top:25%;
   }
 
   .intro div {
-    
+
   }
 
   .mobile_map {
@@ -444,7 +460,7 @@ form input[type="submit"] {
     width:48%;
     float:left;
   }
-  
+
 
   .contact {
     width:48%;
