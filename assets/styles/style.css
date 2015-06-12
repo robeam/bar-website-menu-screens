@@ -31,11 +31,19 @@
   border-radius: 50%;
 }
 
-.pale {background-color: red}
-.ipa {background-color: green}
-.black {background-color: yellow}
-.sour {background-color: orange}
-.belgium {background-color: blue}
+.pale {background-color: #FFCF36}
+.ipa {background-color: #FFCF36}
+.black {background-color: #210506}
+.sour {background-color: #E69100}
+.belgium {background-color: #963500}
+
+/*
+colours
+light yellow #FFCF36
+warm yellow #E69100
+reddish brown #963500
+dark #210506
+*/
 
 .tablesaw-stack td.description {
   display: none;
