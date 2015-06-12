@@ -28,12 +28,7 @@
 /*Table*/
 
 #data table {
-	font: 100%/1.2 sans-serif;
   font-size: 0.75em;
-}
-
-#data table tr:nth-child(even) {
-    background-color: #efefef;
 }
 
 #data table td.tool {
@@ -55,6 +50,9 @@
 #data b.tablesaw-cell-label {
   width: 100%;
   margin: 0 0 6px 0;
+}
+.tablesaw-stack tbody tr {
+  border-bottom: 2px solid rgba(255,255,255,0.15);
 }
 
 @media screen and (max-width: 70em) {
@@ -239,10 +237,6 @@ header h1 a {
 }
 .type.dark span {
   background-color:#210506;
-}
-
-.tablesaw thead {
-  display:none;
 }
 
 .img_break {
