@@ -144,7 +144,7 @@ h1,h2,h3 {
   letter-spacing:0.05em;
 }
 h1 {
-  font-size:1.53em;
+  font-size:2em;
 }
 h3 {
   font-size:1.53em;
@@ -163,23 +163,30 @@ a {
 }
 
 header{
-   padding:2% 0 4% 0;
+   /*padding:2% 0 4% 0;*/
    /*position:fixed;
    left:0;
    top:0;*/
    z-index:999;
    width:100%;
-   border-bottom:5px solid rgba(0,0,0,0.2);
    text-align:center;
+   height:100%;
+   position:relative;
 }
-header h1 a {
+header a.dots {
   display:block;
   width:3em;
   text-indent:-999em;
   background:url(../images/dots.svg) no-repeat center center;
-  background-size:2em;
+  background-size:100%;
   height:2em;
-  margin:0 auto 0.3em auto;
+  margin:0.3em auto;
+}
+header h1  {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height:1em;
 }
 
 .intro {
