@@ -37,9 +37,7 @@
 .sour {background-color: orange}
 .belgium {background-color: blue}
 
-.tablesaw-stack td.description {
-  display: none;
-}
+
 
 /*Table*/
 
@@ -146,7 +144,6 @@ a {
 
 header{
    padding:2% 0 4% 0;
-   background:rgba(29,33,35,0.9);
    /*position:fixed;
    left:0;
    top:0;*/
