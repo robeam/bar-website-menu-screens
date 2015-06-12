@@ -145,12 +145,12 @@ body {
 }
 
 h1,h2,h3 {
-  font-family:"Vitesse Sans";
+  font-family:"Avenir";
   text-transform:uppercase;
   letter-spacing:0.05em;
 }
 h1 {
-  font-size:2em;
+  font-size:4em;
 }
 h3 {
   font-size:1.53em;
@@ -514,3 +514,6 @@ form input[type="submit"] {
 }
 
 
+.tablesaw-sortable th.sortable-head button {
+  font-family: "Georgia";
+}
