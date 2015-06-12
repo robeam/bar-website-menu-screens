@@ -1,3 +1,32 @@
+/* Global Styles */
+
+.clear-float {
+  width: 100%;
+  overflow: hidden;
+}
+
+.float {
+  float: left;
+  width: 50%;
+}
+
+.panel {
+  min-height: 200px;
+}
+
+
+.bg-image-header {
+  width: 100%;
+}
+
+.image {
+  float: left;
+  width: 25%;
+}
+
+
+/*Table*/
+
 #data table {
 	font: 100%/1.2 sans-serif;
   font-size: 0.75em;

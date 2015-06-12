@@ -26,35 +26,15 @@
 
         <div id="data"></div>
         <script src="assets/javascript/modernizr.js"></script>
-
+        <!-- iFrame support -->
         <script src="assets/javascript/pym.js"></script>
+        <!-- Responsiev Tables -->
         <script src="assets/javascript/tablesaw/tablesaw.js"></script>
-        <script src="assets/javascript/tabletop.js"></script>
         <script src="assets/javascript/responsiveTable.js"></script>
-
-        <script type="text/javascript">
-
-        var spreadsheet_id = '1acJiyyol2E9CcmhCR2DrmSjie6Nlih9M9viGV2HlR5c';
-
-          (function() {
-            var reponsive_table = new ResponsiveTable(spreadsheet_id, [["beer","Beer"],["style","Style"],["brewery","Brewery"],["location","Location"],["abv","ABV %"],["description","Description"],['small','150ml'],['medium','250ml'],['large','500ml'],['srm','SRM']]);
-
-            var inIframe = function() {
-              try {
-                return window.self !== window.top;
-              } catch (e) {
-                return true;
-              }
-            };
-
-            $(function() {
-              if (inIframe())
-                $('body').css('overflow-x', 'hidden');
-            });
-          })();
-        </script>
-
-
+        <!-- GOOGLE SPREADSHEET IMPORTER -->
+        <script src="assets/javascript/tabletop.js"></script>
+        <!-- ours! -->
+        <script src="assets/javascript/script.js"></script>
 
     </body>
 </html>
