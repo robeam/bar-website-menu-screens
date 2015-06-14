@@ -126,6 +126,10 @@ body {
   line-height:140%;
 }
 
+body p {
+  font-family:"Avenir";
+}
+
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -533,5 +537,9 @@ form input[type="submit"] {
 
 
 .tablesaw-sortable th.sortable-head button {
-  font-family: "Georgia";
+  font-family: "Avenir";
+}
+
+a {
+  color: #F1FF10;
 }
