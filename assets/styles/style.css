@@ -118,16 +118,12 @@ dark #210506
 @import "reset.css";
 
 body {
-  font-family:"Monospac821 BT WGL4",monospace;
+  font-family:"Avenir",Helvetica,sans-serif;
   position:relative;
   background-size:cover;
   color:#fff;
   font-size:16px;
   line-height:140%;
-}
-
-body p {
-  font-family:"Avenir";
 }
 
 .clearfix:after {
@@ -149,7 +145,6 @@ body p {
 }
 
 h1,h2,h3 {
-  font-family:"Avenir";
   text-transform:uppercase;
   letter-spacing:0.05em;
 }
@@ -225,50 +220,7 @@ header h1  {
   border-top:5px solid rgba(0,0,0,0.2);
 }
 
-.beerlist {
-  position:relative;
-}
-.beerlist > li {
-  border-bottom:2px solid rgba(255,255,255,0.1);
-  padding:1.5em 0;
-  position:relative;
-}
-.tap_number {
-  width:2em;
-  text-align:center;
-  position:absolute;
-  left:-6%;
-}
-.beerlist h4 {
-  max-width:60%;
-}
-.beerlist .meta {
-  position:absolute;
-  right:0;
-  top:1.5em;
-  width:30%;
-}
-.beerlist .description {
-  opacity:0.8;
-  line-height:1.2em;
-  font-size:0.9em;
-  width:60%;
-  float:left;
-}
-.beerlist dl {
-  width:30%;
-  float:right;
-  margin-right:2.6%;
-  text-align:center;
-}
-.beerlist dl li {
-  float:left;
-  width:33%;
-}
-.beerlist dl dt {
-  opacity:0.8;
-  font-size:0.9em;
-}
+
 
 .type span {
   display:inline-block;
@@ -347,7 +299,7 @@ form div {
   position:relative;
 }
 form input {
-  font-family:"Monospac821 BT WGL4",monospace;
+  font-family:"Avenir",Helvetica,sans-serif;
   font-size:1em;
   padding:0.8em 10% 0.8em 2%;
   border:0;
