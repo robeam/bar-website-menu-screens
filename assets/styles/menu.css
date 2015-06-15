@@ -24,6 +24,10 @@ body {
 .clearfix { display: block; }
 /* close commented backslash hack */
 
+.hidden {
+	display:none;
+}
+
 h1 {
 	font-family:"Vitesse sans";
 	text-transform:uppercase;
