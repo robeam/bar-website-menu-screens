@@ -111,5 +111,58 @@ h4 {
 
 /* DAY VERSION */
 .day {
-	background:;
+	background:#edece8;
+	color:#343434;
+}
+.day .beerlist > li {
+	border-bottom:2px solid rgba(0,0,0,0.1);
+}
+.day .beerlist .empty {
+	color:rgba(0,0,0,0.3);
+}
+
+/* ALT LAYOUT */
+body.alt {
+	padding:0;
+}
+body.alt h1 {
+	padding:2em 5% 1em 10%;
+	text-align:left;
+}
+
+.beerlist.alt {
+	border-top:2px solid rgba(255,255,255,0.1);
+}
+.beerlist.alt > li {
+	padding:1.5em 10%;
+}
+.alt .tap_number {
+  left:2%;
+}
+.alt .meta {
+	position:static;
+	margin-bottom:1em;
+	font-size:0.9em;
+	opacity:0.8;
+}
+.alt .type span {
+	position:absolute;
+	left:6%;
+	top:1.8em;
+}
+.alt dl {
+	margin-right:0;
+	position:absolute;
+	top:1.5em;
+	right:7%;
+}
+.alt dt {
+	display:none;
+}
+.alt .beerlist > li:first-child dt {
+	display:block;
+	position:absolute;
+	top:-4.5em;
+	font-size:1em;
+	margin-left:2em;
 }
