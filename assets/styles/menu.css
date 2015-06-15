@@ -109,17 +109,6 @@ h4 {
 }
 
 
-/* DAY VERSION */
-.day {
-	background:#edece8;
-	color:#343434;
-}
-.day .beerlist > li {
-	border-bottom:2px solid rgba(0,0,0,0.1);
-}
-.day .beerlist .empty {
-	color:rgba(0,0,0,0.3);
-}
 
 /* ALT LAYOUT */
 body.alt {
@@ -165,4 +154,21 @@ body.alt h1 {
 	top:-4.5em;
 	font-size:1em;
 	margin-left:2em;
+}
+
+
+
+/* DAY VERSION */
+.day {
+	background:#edece8;
+	color:#343434;
+}
+.day .beerlist > li {
+	border-bottom:2px solid rgba(0,0,0,0.1);
+}
+.day .beerlist .empty {
+	color:rgba(0,0,0,0.3);
+}
+.day.alt .beerlist.alt {
+	border-top-color:rgba(0,0,0,0.1);
 }
