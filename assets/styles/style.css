@@ -47,16 +47,17 @@ dark #210506
 
 .button {
   display: inline-block;
-  padding: 8px 15px;
-  margin: 5px 0 10px;
-  background-color: #F1FF10;
-  color: black;
+  padding: 0.7em 1.5em;
+  border-radius:1.4em;
+  border:1px solid #F1FF10;
+  color: #F1FF10;
   text-decoration: none;
+  margin:1em 0;
 }
 .button:hover,
 .button:focus,
 .button:active {
-  background:#fff;
+  background:#F1FF10;
   color:#000;
 }
 
@@ -165,8 +166,23 @@ h3 {
 h4 {
   margin-bottom:1.2em;
 }
+h5 {
+  margin-bottom:1em;
+}
 p {
   margin-bottom:1em;
+}
+
+hr {
+  border:0;
+  border-top:1px solid rgba(255,255,255,0.2);
+  margin:2em 0;
+}
+
+ul.bullets {
+  list-style:circle;
+  margin-bottom:1em;
+  padding-left:1.2em;
 }
 
 a {
@@ -328,7 +344,7 @@ form input[type="submit"] {
 
 .sociallinks {
   overflow:hidden;
-  margin:3em 0;
+  margin:1em 0;
 }
 .sociallinks li {
   width:30%;
