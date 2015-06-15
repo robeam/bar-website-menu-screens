@@ -313,6 +313,7 @@ footer {
 
 form {
   margin-bottom:2em;
+
 }
 form label {
   display:block;
@@ -324,12 +325,16 @@ form div {
 form input {
   font-family:"Avenir",Helvetica,sans-serif;
   font-size:1em;
-  padding:0.8em 10% 0.8em 2%;
+  padding:0.8em 10% 0.8em 4%;
   border:0;
   display:inline-block;
 }
+form *:focus {
+  outline:0;
+}
 form input[type="email"] {
-  width:88%;
+  width:85%;
+  border-radius:1.5em
 }
 form input[type="submit"] {
   background:#F1FF10;
@@ -340,31 +345,34 @@ form input[type="submit"] {
   right:0;
   top:0;
   float:right;
+  border-top-right-radius:1.5em;
+  border-bottom-right-radius:1.5em
 }
 
 .sociallinks {
-  overflow:hidden;
-  margin:1em 0;
+  margin:0.5em 0;
+  float:right;
+  width:40%;
 }
 .sociallinks li {
-  width:30%;
+  width:33%;
   float:left;
-  margin-left:5%;
 }
 .sociallinks li:first-child {
   margin:0;
 }
 .sociallinks li a {
   display:block;
-  background:rgba(255,255,255,0.2) no-repeat center center;
-  background-size:2.6em;
+  background:transparent no-repeat center center;
+  background-size:2.4em;
   text-indent:-9999em;
   height:4em;
+  opacity:0.3;
 }
 .sociallinks li a:hover,
 .sociallinks li a:focus,
 .sociallinks li a:active {
-  background-color:rgba(255,255,255,0.5);
+  opacity:1;
 }
 .sociallinks li.twitter a {
   background-image:url(../images/twitter.svg);
