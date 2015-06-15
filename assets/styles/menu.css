@@ -57,6 +57,9 @@ h4 {
 .beerlist h4 {
   max-width:60%;
 }
+.beerlist .empty {
+	color:rgba(255,255,255,0.3);
+}
 .beerlist .meta {
   position:absolute;
   right:0;
